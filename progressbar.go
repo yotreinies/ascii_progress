@@ -61,7 +61,7 @@ func (pb *ProgressBar) Print() {
 	}
 
 	fmt.Printf(
-		"\r%s: [%s%s] %.2f%%",
+		"\r%-30v: [%s%s] %.2f%%",
 		pb.Name,
 		strings.Repeat(bar, int(progress))+tip,
 		strings.Repeat(blank, pb.Length-int(progress)),
