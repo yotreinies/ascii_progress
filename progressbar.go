@@ -58,6 +58,10 @@ func (pb *ProgressBar) Print() {
 		// [▇▇▇       ] 30.0%
 		blank = " "
 		bar, tip = "▇", "▇"
+	case 3:
+		// [▇▇▇       ] 30.0%
+		blank = "░"
+		bar, tip = "▓", "▓"
 	}
 
 	fmt.Printf(
